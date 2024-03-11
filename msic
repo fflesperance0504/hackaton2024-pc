@@ -1,2 +1,5 @@
 az account set --subscription 'my_subscription_id'
 az ad sp create-for-rbac --skip-assignment --name 'my-service-pincipal'
+az acr credential show --name <acr_name>
+docker login <acr_login_server> -u <username> -p <password>
+docker push exampleacr.azurecr.io/myimage:latest
